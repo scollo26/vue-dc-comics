@@ -8,22 +8,25 @@
     </div>
     <div class="">
         <ul>
-            <li>
-                
-                 <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-DCUI.svg" alt="">
-                <p>DIGITAL COMICS</p>
+           <li>
+            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+            DIGITAL COMICS
             </li>
             <li>
-               <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-DCshop.svg" alt="">
-                <p>DC MERCHANDISE</p>
+                <img src="../assets/img/buy-comics-merchandise.png" alt="">
+                    DC MERCHANDISE
             </li>
             <li>
-                <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-subscription.svg" alt="">
-                <p>SUBSCRIPTION</p>
+                <img src="../assets/img/buy-comics-subscriptions.png" alt="">
+                SUBSCRIPTIONS
             </li>
             <li>
-                <img src="https://www.dccomics.com/sites/all/themes/dc_comics_bp/images/buy-bar-locator.svg" alt="">
-                <p>COMIC SHOP LOCATOR</p>
+                <img id="small" src="../assets/img/buy-comics-shop-locator.png" alt="">
+                COMIC SHOP LOCATOR
+            </li>
+            <li>
+                <img src="../assets/img/buy-dc-power-visa.svg" alt="">
+                DC POWER VISA
             </li>
         </ul>
         
@@ -76,9 +79,11 @@ export default {
     
         li {
             padding: 3em;
-            img{
-                vertical-align: middle;
-            }
+               img {
+                     margin-right: 10px;
+                    width: 45px;
+                    vertical-align: middle;
+                } 
             a {
          display: block;
          text-decoration: none;

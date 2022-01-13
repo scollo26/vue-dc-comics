@@ -1,54 +1,59 @@
 
 <template>
   <footer>
-    <div class="container">
-     
-      <ul class="col">
-          <p>DC COMICS</p>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <p>DC COMICS</p>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-      <ul class="col">
-          <p>DC COMICS</p>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-      <ul class="col">
-          <p>DC COMICS</p>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-        <li><a href="">link</a></li>
-      </ul>
-      <div class=" logo">
-          <img src="../assets/img/dc-logo-bg.png" alt="">
-      </div>
-
-     
-       
-    </div>
-    <div class="contatti ">
-        <div class="container" >
-            <button>SIGN-UP NOW!</button>
-            
-            <ul>
-                <li><p>foolow us</p></li>
-                <li><img src="../assets/img/footer-facebook.png" alt=""></li>
-                <li><img src="../assets/img/footer-periscope.png" alt=""></li>
-                <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
-                <li><img src="../assets/img/footer-twitter.png" alt=""></li>
-                <li><img src="../assets/img/footer-youtube.png" alt=""></li>
+    <div class=" logo">  
+        <div class="container">
+            <ul class="col">
+                <p>DC COMICS</p>
+                <li><a href="">Characters</a></li>
+                <li><a href="">Comics</a></li>
+                <li><a href="">Movies</a></li>
+                <li><a href="">TV</a></li>
+                <li><a href="">Games</a></li>
+                <p>DC SHOP</p>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
             </ul>
+            <ul class="col">
+                <p>DC </p>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+            </ul>
+            <ul class="col">
+                <p>SITES</p>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+                <li><a href="">link</a></li>
+            </ul>  
+        </div>
+    </div>
+    
+    <div class="footer-bot ">
+        <div class="container" >
+            <div class="sign-up">
+                 <button>SIGN-UP NOW!</button>
+
+            </div>
+                <div class="social">
+                    <ul>
+                    <li><p>FOLLOW US</p></li>
+                    <li><img src="../assets/img/footer-facebook.png" alt=""></li>
+                    <li><img src="../assets/img/footer-periscope.png" alt=""></li>
+                    <li><img src="../assets/img/footer-pinterest.png" alt=""></li>
+                    <li><img src="../assets/img/footer-twitter.png" alt=""></li>
+                    <li><img src="../assets/img/footer-youtube.png" alt=""></li>
+                    </ul>
+                </div>
+            
+
+            
+               
+           
         </div>
         
     </div>
@@ -64,25 +69,22 @@ export default {
 
 <style lang="scss" scoped>
   footer {
-    background-repeat: repeat-x;
+    background-repeat: repeat;
     background-position: bottom left;
     background-image: url(../assets/img/footer-bg.jpg);
-    .container {
-      display: flex;
-    //   padding-top: 40px;
-      justify-content: flex-start;
-      
-      
-      
-      
-      .col {
-        flex-basis: calc(100% / 8); 
+    
+    .logo { 
+        background-image: url("../assets/img/dc-logo-bg.png");
+        background-repeat: no-repeat;
+        background-position-x: 85%;
+        background-position-y: 50%;
+        .container {
+        display: flex;
         position: relative;
-        }
-     
+        justify-content: flex-start;
+    
     ul {
-        list-style: none;
-      
+        list-style: none; 
         P{
             padding-top: 30px;
             color: white;
@@ -94,62 +96,54 @@ export default {
                 color: gray;
             }
         }
-    }
-    .logo { 
-             height: 30vh;
-             position: absolute;
-             left: 50%;
-             bottom: 40%
-            
+    }     
             
         }
-        img{
-            width: auto;
-            height:auto;
-            
-   
-        }
-        
-        
 
+            
         
-    }
-    .contatti{
-            background-color: #303030;
-            height: 150px;
+        
+    }   
+    .footer-bot {
+        background-color: #303030;
+        padding: 2em 0;
+        z-index: 100;
+        
+        .container {
             display: flex;
-            align-items: center;
             justify-content: space-between;
+            align-items: center;
             
-            // flex-basis: calc(100% / 2); 
-            .container{
-                ul{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    
-                    
+            .sign-up {
+                width: 100%;
+                button {
+                background-color: #303030; 
+                color: white; 
+                border: 2px solid #008CBA;
+                padding: 10px;
+                &:hover {
+                background-color: #008CBA;
+                color: white;
+                    }
                 }
-
+            }
+            .social {
+                ul {
+                    list-style: none;
+                    display: flex;
+                    justify-content: flex-end;
+                    align-items: center;
+                    gap: 1em;
+                    p {
+                        text-transform: uppercase;
+                        font-size: 1.5em;
+                        color: #0282F9;
+                        
+                    }
+                }
             }
         }
-        p{
-            color: white;
-        }
-        
-        button {
-            background-color: #303030; 
-            color: white; 
-            border: 2px solid #008CBA;
-            padding: 10px;
-            &:hover {
-            background-color: #008CBA;
-            color: white;
-            }
-            
-        
-        }
-        
+    }
         
 }
 </style>
