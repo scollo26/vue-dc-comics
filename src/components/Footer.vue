@@ -1,6 +1,6 @@
 
 <template>
-  <footer>
+<footer>
     <div class=" logo">  
         <div class="container">
             <ul class="col">
@@ -10,25 +10,31 @@
                 <li><a href="">Movies</a></li>
                 <li><a href="">TV</a></li>
                 <li><a href="">Games</a></li>
+                <li><a href="">Videos</a></li>
+                <li><a href="">News</a></li>
                 <p>DC SHOP</p>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
+                <li><a href="">Shop DC</a></li>
+                <li><a href="">Shop DC Collectibles</a></li>
             </ul>
             <ul class="col">
                 <p>DC </p>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
+                <li><a href="">Terms Of Use</a></li>
+                <li><a href="">Privacy Policy (New)</a></li>
+                <li><a href="">Advertising</a></li>
+                <li><a href="">Jobs</a></li>
+                <li><a href="">Subscriptions</a></li>
+                <li><a href="">CPSC Certificates</a></li>
+                <li><a href="">Ratings</a></li>
+                <li><a href="">Shop Help</a></li>
+                <li><a href="">Contact Us</a></li>
             </ul>
             <ul class="col">
                 <p>SITES</p>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
-                <li><a href="">link</a></li>
+                <li><a href="">DC</a></li>
+                <li><a href="">DC UNIVERSE INFINITE</a></li>
+                <li><a href="">DC Kids</a></li>
+                <li><a href="">DC Shop</a></li>
+                <li><a href="">MAD Magazine</a></li>
             </ul>  
         </div>
     </div>
@@ -36,7 +42,7 @@
     <div class="footer-bot ">
         <div class="container" >
             <div class="sign-up">
-                 <button>SIGN-UP NOW!</button>
+                <button>SIGN-UP NOW!</button>
 
             </div>
                 <div class="social">
@@ -50,25 +56,25 @@
                     </ul>
                 </div>
             
-
-            
-               
-           
         </div>
         
-    </div>
-     
-  </footer>
+    </div>  
+</footer>
 </template>
 
 <script>
 export default {
-  name: 'Footer'
+    name: "Footer",
+    data() {
+        return {
+            
+        }
+    },
 }
 </script>
 
 <style lang="scss" scoped>
-  footer {
+footer {
     background-repeat: repeat;
     background-position: bottom left;
     background-image: url(../assets/img/footer-bg.jpg);

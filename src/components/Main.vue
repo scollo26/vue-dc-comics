@@ -1,16 +1,16 @@
 
 <template>
-  <main>
-    <div class="black">
+    <main>
+        <div class="black">
         <div class="container ">
             <h1>Content goes here</h1>
         </div>
-    </div>
-    <div class="">
+        </div>
+        <div class="">
         <ul>
-           <li>
-            <img src="../assets/img/buy-comics-digital-comics.png" alt="">
-            DIGITAL COMICS
+            <li>
+                <img src="../assets/img/buy-comics-digital-comics.png" alt="">
+                DIGITAL COMICS
             </li>
             <li>
                 <img src="../assets/img/buy-comics-merchandise.png" alt="">
@@ -37,36 +37,34 @@
         
         
         
-    </div>
-  </main>
+        </div>
+    </main>
 </template>
 
 <script>
 export default {
     name: 'Main',
-//   data() {
-//     return {
-//       title: 'Lista Prodotti'
-//     }
-//   }
+    data() {
+    return {
+        title: ''
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
     @import "../assets/scss/partials/_variables.scss";
-     main {
+main {
     // height: 500px;
     color: white;
     
     div{
-        background-color: black;
-         
+        background-color: black; 
         
     }
     h1 {
-      font-size: 2em;
-      padding: 30px;
-      
+        font-size: 2em;
+        padding: 30px; 
     }
     div{
         
@@ -79,26 +77,25 @@ export default {
     
         li {
             padding: 3em;
-               img {
-                     margin-right: 10px;
+            img {
+                    margin-right: 10px;
                     width: 45px;
                     vertical-align: middle;
                 } 
             a {
-         display: block;
-         text-decoration: none;
-         padding: 5em ;
-         
-         
-         
+                display: block;
+                text-decoration: none;
+                padding: 5em ;
             }
             p{
                 display: inline;
             }
+            #small{
+                width: 35px;
+            }
         }
     }
         
-    }
-     
-  }
+    } 
+}
 </style>

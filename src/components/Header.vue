@@ -5,7 +5,7 @@
         
         <ul>
             <li><a href="#">Characters</a></li>
-            <li><a href="#">Comics</a></li>
+            <li ><a class="active" href="#">Comics</a></li>
             <li><a href="#">Movies</a></li>
             <li><a href="#">Tv</a></li>
             <li><a href="#">Games</a></li>
@@ -47,7 +47,7 @@ export default {
         padding: 0.7em 1em ;
         transition: all 0.4s;
         color: black;
-        height: 4em;
+        height: 6em;
         &:hover,
         &:active,
         &.active {
