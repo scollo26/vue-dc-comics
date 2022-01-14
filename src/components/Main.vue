@@ -1,4 +1,3 @@
-
 <template>
     <main>
         <div class="jumbo">
@@ -8,13 +7,9 @@
         </div>
         <div class="content-section">
             <div class=" container">
-                <div class="product" v-for="(product, index) in products" :key="index">
-                    <img id="small" :src="product.thumb" alt="">
-                    <div>
-                        <h2>{{product.series}}</h2>
-                    </div>
+                <Product class="product" v-for="(product, index) in products" :key="index" :img="product.thumb" :alt="product.series" 
 
-                </div>
+                />
                 
                 
             </div>
@@ -58,8 +53,12 @@
 </template>
 
 <script>
+import Product from "./Product.vue"
 export default {
     name: 'Main',
+    components: {
+        Product,
+    }, 
     data() {
     return {
         products: [
@@ -195,25 +194,21 @@ main {
             
             
             
-            .product{
-                 
+            .product{    
                 flex-basis: ((100% / 6) );
                 height: 100%;
                 #small{
                 width: 80%;
                 }
                 
-                img{
+                // img{
                 
-                width: 80%;
-                padding-top: 40px;
+                // width: 80%;
+                // padding-top: 40px;
                 
-                }
+                // }
                 
-            } 
-            
-            
-           
+            }  
         }
         .load{
             text-align: center;
